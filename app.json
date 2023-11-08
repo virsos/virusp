@@ -1,0 +1,98 @@
+{
+    "name": "فايروس سورس ميوزك",
+    "description": "سورس ميوزك فايروس ",
+    "logo": "https://telegra.ph/file/af1bdfb82736a847b455c.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "AnonX",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "env": {
+      "API_ID": {
+        "description": "ماتبعصش القيمه",
+        "value": "",
+        "required": true
+      },
+     "CHANNEL_ID": {
+        "description": "خلي مثل ماهو",
+        "value": "1747534",
+        "required": true
+      },
+      "USER_OWNER": {
+        "description": "معرفك  بدون @",
+        "value": "en_jq",
+        "required": true
+      },
+      "START_IMG_URL": {
+        "description": "صورة الستارت",
+        "value": "https://telegra.ph/file/839cbe67ff070e5ff3b72.jpg",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "خلي القيمه زي ماهي",
+        "value": "",
+        "required": true
+      },
+      "SUPPORT_CHANNEL": {
+        "description": "معرف قناتك بدون @",
+        "value": "s_o_679",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "توكن بوتك",
+        "value": "",
+        "required": true
+      },
+      "MONGO_DB_URI": {
+        "description": "مونقو دي بي لو ماتعرفش تطلعه خليه مثل ماهو",
+        "value": "mongodb+srv://islam2005:islam2005@cluster0.rdjot.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+        "required": true
+      },
+      "MUSIC_BOT_NAME": {
+        "description": "اسم بوتك بالعربي",
+        "value": "توم",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "ايديك تقدر تحط اكثر من ايدي بس مسافه بين كل ايدي",
+        "value": "5676384368",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "جلسة بايروجرام حساب المساعد نوع V2",
+        "value": "",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": "مفتاح الهيروكو",
+        "value": "",
+        "required": false
+      },
+      "HEROKU_APP_NAME": {
+        "description": "اسم تطبيقك نفس اول فار",
+        "value": "",
+        "required": false
+      },
+      "LOG_GROUP_ID": {
+        "description": "ايدي جروب الدعم بدايته-100",
+        "value": "-100",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }
